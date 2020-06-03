@@ -20,10 +20,9 @@ def initialize(name, age)
  end
  
  def best_tipper
-   
     largest_tip = 0
     best_tipping_customer = nil
-    meals.each do |customer|
+    self.meals.each do |customer|
       if customer.tip > largest_tip
         largest_tip = meal.tip
         best_tipping_customer = customer
