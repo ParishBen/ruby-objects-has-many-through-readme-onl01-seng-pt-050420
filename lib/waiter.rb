@@ -20,14 +20,9 @@ def initialize(name, age)
  end
  
  def best_tipper
-    largest_tip = 0
-    best_tipping_customer = nil
-    self.meals.each do |customer|
-      if customer.tip > largest_tip
-        largest_tip = meal.tip
-        best_tipping_customer = customer
-      end
-    end
-    best_tipping_customer.customer
+  best_tipped_meal = meals.max do |meal_a, meal_b|
+    meal_a.tip <=> meal_b.tip
+   end
+  best_tipped_meal.customer
   end
 end
