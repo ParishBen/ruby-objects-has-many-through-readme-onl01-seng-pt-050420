@@ -15,5 +15,12 @@ def initialize(name, age)
  def meals
    Meal.all.select {|meal| meal.waiter==self}
  end
- 
+ def best_tipper
+   meals.collect {|meal| sorted= [] 
+   sorted << meal.tip
+   really= sorted.sort 
+   if meal.tip == really.last 
+     meal.customer}
+   end
+ end
 end
