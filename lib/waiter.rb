@@ -29,5 +29,5 @@ def initialize(name, age)
         best_tipping_customer = customer
       end
     end
-    oldest_customer
+    best_tipping_customer
   end
