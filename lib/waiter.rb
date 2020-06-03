@@ -23,10 +23,10 @@ def initialize(name, age)
    
     largest_tip = 0
     best_tipping_customer = nil
-    meals.each do |meal|
-      if meal.tip > largest_tip
+    meals.each do |customer|
+      if customer.tip > largest_tip
         largest_tip = meal.tip
-        oldest_customer = customer
+        best_tipping_customer = customer
       end
     end
     oldest_customer
