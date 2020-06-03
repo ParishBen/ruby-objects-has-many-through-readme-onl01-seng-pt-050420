@@ -18,7 +18,7 @@ def initialize(name, age)
  def best_tipper
    meals.collect {|meal| sorted= [] 
    sorted << meal.tip
-   really= sorted.sort 
+   really = sorted.sort 
    if meal.tip == really.last 
      meal.customer}
    end
