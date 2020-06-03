@@ -22,5 +22,5 @@ def initialize(name, age)
    if meal.tip == really.last 
      meal.customer}
    end
- end
+ 
 end
