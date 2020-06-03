@@ -21,11 +21,11 @@ def initialize(name, age)
  
  def best_tipper
    sorted= [] 
-   meals.map {|meal|
+   meals.map do |meal|
    sorted << meal.tip
    really = sorted.sort 
    if meal.tip == really.last 
-     meal.customer}
+     meal.customer
    end
  end
 end
