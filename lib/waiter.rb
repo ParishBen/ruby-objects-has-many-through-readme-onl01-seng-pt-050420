@@ -30,3 +30,4 @@ def initialize(name, age)
     end
     best_tipping_customer
   end
+end
