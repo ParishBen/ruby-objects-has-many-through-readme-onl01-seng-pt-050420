@@ -21,7 +21,7 @@ def initialize(name, age)
  
  def best_tipper
    sorted= [] 
-   meals.collect {|meal|
+   meals.map {|meal|
    sorted << meal.tip
    really = sorted.sort 
    if meal.tip == really.last 
