@@ -20,13 +20,14 @@ def initialize(name, age)
  end
  
  def best_tipper
-   sorted= [] 
-   meals.map do |meal|
-   sorted << meal.tip
-   really = sorted.sort 
-   if meal.tip == really.last 
-     meal.customer
-   end
+   def self.oldest_customer
+    oldest_age = 0
+    oldest_customer = nil
+    self.all.each do |customer|
+      if customer.age > oldest_age
+        oldest_age = customer.age
+        oldest_customer = customer
+      end
+    end
+    oldest_customer
   end
- end
-end
